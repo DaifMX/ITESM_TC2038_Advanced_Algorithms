@@ -30,6 +30,7 @@ lista de N pares ordenados de la forma (A,B) que representan la ubicación en un
 
 
 ### Ejemplo Input
+```
 4
 
  0 16 45 32
@@ -46,3 +47,4 @@ lista de N pares ordenados de la forma (A,B) que representan la ubicación en un
 (300,100)
 (450,150)
 (520,480)
+```
