@@ -1,4 +1,4 @@
-// === PROBLEMA DEL VIAJERO (TSP) - PROGRAMACIÓN DINÁMICA ===
+// === PROBLEMA DEL VIAJERO (TSP) - PROGRAMACIÓN DINÁMICA === \\
 
 export function tsp(matrix) {
     const n = matrix.length;

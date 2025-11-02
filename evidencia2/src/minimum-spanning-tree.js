@@ -1,6 +1,6 @@
 import { UnionFind } from "./UnionFind.js";
 
-// ÁRBOL DE EXPANSIÓN MÍNIMA (KRUSKAL)
+// === ÁRBOL DE EXPANSIÓN MÍNIMA (KRUSKAL) === \\
 
 export function minimumSpanningTree(matrix) {
     const n = matrix.length;

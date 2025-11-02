@@ -1,4 +1,4 @@
-// === DIAGRAMA DE VORONOI ===
+// === DIAGRAMA DE VORONOI === \\
 
 export function voronoiDiagram(centrals) {
     const n = centrals.length;
@@ -29,11 +29,11 @@ export function voronoiDiagram(centrals) {
                 
                 // Verificar si este punto está más cerca de la central i
                 let closest = i;
-                let minDist = distance(centrals[i], { x, y });
+                let minDist = pitagoras(centrals[i], { x, y });
                 
                 for (let j = 0; j < n; j++) {
                     if (j !== i) {
-                        const d = distance(centrals[j], { x, y });
+                        const d = pitagoras(centrals[j], { x, y });
                         if (d < minDist) {
                             closest = j;
                             minDist = d;
@@ -55,6 +55,6 @@ export function voronoiDiagram(centrals) {
     return polygons;
 }
 
-function distance(p1, p2) {
+function pitagoras(p1, p2) {
     return Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
 }

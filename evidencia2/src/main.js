@@ -35,12 +35,12 @@ function solve(input) {
     // RESOLVER PROBLEMAS
     // ============================================
 
-    console.log("=".repeat(50));
-    console.log("SOLUCIÓN AL PROBLEMA DE OPTIMIZACIÓN DE RED");
+    console.log("\n" + "=".repeat(50));
+    console.log(`${"=".repeat(12)} Actividad Integradora #2 ${"=".repeat(12)}`);
     console.log("=".repeat(50));
 
     // 1. Árbol de Expansión Mínima
-    console.log("\n1. Forma óptima de cablear las colonias:");
+    console.log("\n1. Path de cableado optimizado:");
     const mst = minimumSpanningTree(distMatrix);
     for (const edge of mst) {
         const from = String.fromCharCode(65 + edge.from);
@@ -49,7 +49,7 @@ function solve(input) {
     }
 
     // 2. TSP
-    console.log("\n2. Ruta para repartir correspondencia:");
+    console.log("\n2. Ruta más eficiente:");
     const route = tsp(distMatrix);
     const routeStr = route.map(i => String.fromCharCode(65 + i)).join(' -> ');
     console.log(routeStr);
@@ -66,8 +66,6 @@ function solve(input) {
         console.log(`Central ${String.fromCharCode(65 + i)}:`);
         console.log(polygons[i].map(p => `(${p.x.toFixed(1)},${p.y.toFixed(1)})`).join(', '));
     }
-
-    console.log("\n" + "=".repeat(50));
 }
 
 
